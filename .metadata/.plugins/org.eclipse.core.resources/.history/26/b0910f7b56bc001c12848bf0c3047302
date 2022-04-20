@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Bus01 {
+
+	public static void main(String[] args) {
+		
+
+		int age;
+		age= (int)Math.random()*99+1;
+		System.out.println(age);)
+		
+		}
+	
+	
+}

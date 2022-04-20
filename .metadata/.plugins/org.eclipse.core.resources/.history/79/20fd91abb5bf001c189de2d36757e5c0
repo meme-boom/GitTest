@@ -1,0 +1,23 @@
+public class Bus12 {
+
+	
+	public static void main(String[] args) {
+
+	
+		int[] coinUnit = {500,100,50,10};
+		int money =2680;
+		
+		for(int i=0; i<coinUnit.length; i++) {
+			int j=0;
+			for(; j<10; j++) {
+				money-=coinUnit[i]*j;
+				if(money<=0)
+			break;
+			}
+			System.out.println(j);
+				
+			
+		}
+		
+}
+}

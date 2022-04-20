@@ -1,0 +1,33 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) throws IOException {
+		
+		File file  = new File("data/data1.txt");
+		FileInputStream src = new FileInputStream(file);
+		
+		Scanner sc = new Scanner(src);
+		int c=0;
+		
+		while(sc.hasNext()) {
+			String tmp = sc.next();
+			System.out.printf("%s ", tmp);
+			c+=1;
+		}
+		sc.close();
+		src.close();
+		
+		int[] nums = new int[c];
+		{
+			
+		}
+		
+	
+	}
+
+}

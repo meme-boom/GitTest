@@ -1,0 +1,14 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class HelloWorld20 {
+
+	public static void main(String[] args) {
+		
+
+		char lo='a';
+		char up='A';
+		System.out.println(lo-32);
+}
+	
+}

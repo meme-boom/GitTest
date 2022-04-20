@@ -1,0 +1,26 @@
+public class Bus12 {
+
+	
+	public static void main(String[] args) {
+
+	
+		int[] coinUnit = {500,100,50,10};
+		int money =2680;
+		
+		for(int i=0; i<coinUnit.length; i++) {
+			int sum=0;
+			while(true) {
+				money-=coinUnit[i];
+				sum++;
+				if(money>=coinUnit[i])
+					continue;
+				else
+					System.out.print("필요한 "+coinUnit[i]+"원의 수는?");
+					break;
+			}
+			System.out.println(sum);
+		}
+		
+		
+}
+}

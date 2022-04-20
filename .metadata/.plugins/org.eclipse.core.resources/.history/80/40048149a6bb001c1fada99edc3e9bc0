@@ -1,0 +1,13 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class HelloWorld20 {
+
+	public static void main(String[] args) {
+
+
+		int x=5;
+		int result = x>0?(x==0 ? 0 : -1);
+	}
+	
+}

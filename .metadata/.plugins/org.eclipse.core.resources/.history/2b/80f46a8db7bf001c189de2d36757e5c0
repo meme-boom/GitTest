@@ -1,0 +1,27 @@
+public class Bus12 {
+
+	
+	public static void main(String[] args) {
+
+	
+		int[] coinUnit = {500,100,50,10};
+		int money =2680;
+		boolean a= true;
+		int sum=0;
+		
+		for(int i=0; i<coinUnit.length; i++) {
+			while(a=true) {
+				money-=coinUnit[i];
+				sum++;
+				if(money>=coinUnit[i])
+					continue;
+				else
+					break;
+			}
+			System.out.println(sum);
+				
+			
+		}
+		
+}
+}

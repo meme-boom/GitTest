@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Bus5 {
+
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num, max=0, i=0;
+		String tmp;
+		
+		System.out.println("숫자 5회 입력:");
+		while(i<5) {
+			tmp=sc.nextLine();
+			num=Integer.parseInt(tmp);
+			if(num<=100 && num>=0) {
+				if(max<num)
+					max=num;
+				++i;}
+			else
+				System.out.println("0과100사이");
+		}
+		
+		System.out.println("가장큰수: "+max);
+		
+}
+}

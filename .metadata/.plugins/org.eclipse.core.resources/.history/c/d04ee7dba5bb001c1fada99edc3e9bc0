@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class HelloWorld20 {
+
+	public static void main(String[] args) {
+
+
+		Scanner abc = new Scanner(System.in);
+		
+		String s3 = new String("java");
+		String s4 = abc.nextLine();
+		
+		System.out.println(s3==(s4));
+		System.out.println(s3.equals(s4));
+	}
+	
+}

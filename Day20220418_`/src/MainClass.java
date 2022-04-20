@@ -1,0 +1,68 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) throws IOException, InterruptedException {
+		
+		int c=0;
+		{
+		File file  = new File("data/data1.txt");
+		FileInputStream src = new FileInputStream(file);
+		Scanner sc = new Scanner(src);
+		
+		while(sc.hasNext()) {
+			String tmp = sc.next();
+			System.out.printf("%s ", tmp);
+			c+=1;
+		}
+		sc.close();
+		src.close();
+		}
+		System.out.println();
+		int[] nums = new int[c];
+		{
+			File file  = new File("data/data1.txt");
+			FileInputStream src = new FileInputStream(file);
+			Scanner sc = new Scanner(src);
+			
+			for(int i=0; i<c; i++) {
+				String tmp=sc.next();
+				nums[i]=Integer.parseInt(tmp);
+			}
+		System.out.println(Arrays.toString(nums));
+		sc.close();
+		src.close();
+		}
+		int i=0;
+		for(; i<c; i++)
+		{
+			if(nums[i]==88)
+				break;
+		}
+		System.out.println("88은 nums의 몇번째수?: "+ (i+1));
+		int temp= 0;
+		temp=nums[0];
+		nums[0]=nums[5];
+		nums[5]=temp;
+		System.out.println(Arrays.toString(nums));
+		
+		for(int j=0; j<nums.length-1; j++) {
+			int tmp=nums[j];
+			nums[j]=nums[j+1];
+			nums[j+1]=tmp;
+			
+			Thread.sleep(1000);
+			System.out.println(nums[j]);
+		}
+		System.out.println(Arrays.toString(nums));
+		
+		
+		
+	}
+
+}

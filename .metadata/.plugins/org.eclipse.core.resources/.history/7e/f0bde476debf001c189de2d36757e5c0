@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Bus8 {
+
+	
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("년도를 입력하세요");
+		int year = sc.nextInt();
+		System.out.println("월을 입력하세요");
+		int month = sc.nextInt();
+		System.out.println(year+"년 "+month+"월");
+		int days= (year-1)*365+((int)(year-1)/4);
+		int day= ((year-1)*365+((int)(year-1)/4))%7;
+		
+		if(month==1) {
+			for(int i=0; i<day; i++) {
+				System.out.print("X");
+			}
+			for(int j=1; j<=31; j++) {
+				System.out.print(j);
+			}
+		}
+		
+		
+		
+}
+}

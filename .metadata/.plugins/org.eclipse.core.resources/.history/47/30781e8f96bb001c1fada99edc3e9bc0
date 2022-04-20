@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.Scanner;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class HelloWorld21 {
+
+	public static void main(String[] args) {
+		
+
+		int[] abc=new int[10];
+		int sum=0;
+		double mean;
+		for(int i=0; i<abc.length; i++)
+			abc[i]=(int)(Math.random()*99)+1;
+		System.out.println(Arrays.toString(abc));
+		
+		for(int i=0; i<abc.length; i++)
+			sum+=abc[i];
+		
+		mean=(double)sum/(abc.length);
+		System.out.println(mean);
+		
+		}
+	
+	
+}

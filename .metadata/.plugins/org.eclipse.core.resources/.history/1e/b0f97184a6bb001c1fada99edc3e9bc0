@@ -1,0 +1,14 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class HelloWorld20 {
+
+	public static void main(String[] args) {
+
+
+		int x=70;
+		char result = x>=90 ?'A' : (x>=80 ? 'B' : x>=70 ? 'c' : 'f');
+		System.out.println(result);
+	}
+	
+}

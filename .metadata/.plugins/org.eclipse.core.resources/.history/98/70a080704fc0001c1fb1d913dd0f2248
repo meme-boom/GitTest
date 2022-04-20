@@ -1,0 +1,18 @@
+import java.util.Arrays;
+
+public class Bus16 {
+
+	
+	public static void main(String[] args) {
+
+	
+		int sum=0;
+		for(int i=1; i<=100; i++) {
+			sum+=i;
+		}
+		System.out.println(sum);
+		float avg =sum/100;
+		System.out.println(avg);
+		
+}
+}

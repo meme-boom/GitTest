@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class HelloWorld20 {
+
+	public static void main(String[] args) {
+		
+
+		int[] abc=new int[10];
+		abc=(int)(Math.random()*99)+1;
+		System.out.println(Arrays.toString(abc));
+		
+		
+		
+		}
+	
+	
+}

@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class HelloWorld20 {
+
+	public static void main(String[] args) {
+		
+
+		Scanner ab= new Scanner(System.in);
+		Test ts = new Test();
+		ts.sum();
+		}
+	
+class Test {
+	void sum() {
+		System.out.println("Test");
+	}
+}
+	
+}
